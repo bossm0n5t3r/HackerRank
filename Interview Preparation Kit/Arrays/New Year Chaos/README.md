@@ -1,0 +1,3 @@
+# New Year Chaos
+
+[https://www.hackerrank.com/challenges/new-year-chaos/problem](https://www.hackerrank.com/challenges/new-year-chaos/problem)
