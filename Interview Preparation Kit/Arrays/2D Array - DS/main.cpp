@@ -1,9 +1,9 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 // Complete the hourglassSum function below.
-int hourglassSum(vector<vector<int>> arr) {
+int hourglassSum(int arr[6][6]) {
   int max = -63;
   for (int r = 0; r < 4; r++) {
     for (int c = 0; c < 4; c++) {
@@ -19,24 +19,15 @@ int hourglassSum(vector<vector<int>> arr) {
 }
 
 int main() {
-  ofstream fout(getenv("OUTPUT_PATH"));
-
-  vector<vector<int>> arr(6);
+  ios::sync_with_stdio(0);
+  cin.tie(0);
+  int arr[6][6];
   for (int i = 0; i < 6; i++) {
-    arr[i].resize(6);
-
     for (int j = 0; j < 6; j++) {
       cin >> arr[i][j];
     }
-
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
   }
-
   int result = hourglassSum(arr);
-
-  fout << result << "\n";
-
-  fout.close();
-
+  cout << result << "\n";
   return 0;
 }
