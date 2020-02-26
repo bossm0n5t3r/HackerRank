@@ -37,7 +37,7 @@ void minimumBribes(vector<int> q) {
 }
 
 int main() {
-  freopen("input09.txt", "r", stdin);
+  // freopen("input09.txt", "r", stdin);
   int t;
   cin >> t;
   cin.ignore(numeric_limits<streamsize>::max(), '\n');
