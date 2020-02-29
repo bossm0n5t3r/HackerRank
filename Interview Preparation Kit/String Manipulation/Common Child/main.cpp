@@ -8,8 +8,6 @@ int C[5001][5001];
 int commonChild(string s1, string s2) {
   // LCS
   int N = s1.length();
-  for (int r = 0; r <= N; r++) C[r][0] = 0;
-  for (int c = 0; c <= N; c++) C[0][c] = 0;
   for (int r = 1; r <= N; r++) {
     for (int c = 1; c <= N; c++) {
       if (s1[r - 1] == s2[c - 1])
